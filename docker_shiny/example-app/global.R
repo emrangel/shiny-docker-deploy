@@ -1,0 +1,5 @@
+options(shiny.maxRequestSize = 30*1024^2)
+library(haven)
+library(shinydashboard)
+library(shiny)
+library(ggplot2)
