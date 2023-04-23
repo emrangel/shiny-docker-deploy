@@ -9,7 +9,7 @@ RUN install.r shiny rmarkdown
 # install more packages 
 #RUN R -e "install.packages(c('flexdashboard'))"
 
-#RUN addgroup --system app && adduser --system --ingroup app app
+RUN addgroup --system app && adduser --system --ingroup app app
 
 WORKDIR /home/app
 
