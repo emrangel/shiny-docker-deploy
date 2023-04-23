@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN install.r shiny rmarkdown
 
 # install more packages 
-#RUN R -e "install.packages(c('flexdashboard'))"
+RUN R -e "install.packages(c('flexdashboard'))"
 
 RUN addgroup --system app && adduser --system --ingroup app app
 
